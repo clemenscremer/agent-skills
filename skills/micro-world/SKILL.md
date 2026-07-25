@@ -48,7 +48,9 @@ the right artifact — a well-written explainer section may serve better.
   button). Never build a dashboard.
 - **Annotate the discovery path**: a "what to notice" box with 2–3 numbered
   observations, plus preset buttons for the states that matter — but place
-  them so the human can explore *first* and confirm second.
+  them so the human can explore *first* and confirm second. Write labels and
+  annotations for a reader with zero shared vocabulary: expand abbreviations
+  at first use, introduce symbols before using them.
 - **Verify headlessly before delivering** (e.g. playwright): page renders,
   controls work, zero console errors — and check the world's own claims
   against what it displays. It may teach *you* that your annotation was

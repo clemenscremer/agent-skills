@@ -55,6 +55,16 @@ One document, fixed structure, in this order:
    speed regulator** — the change isn't approved or merged until the reader
    passes.
 
+One language rule binds the whole explainer: **assume zero shared
+vocabulary.** Write out every abbreviation and acronym at first use, with a
+one-line gloss of what the thing *is* — the expansion alone rarely helps.
+Introduce every symbol before its first use: what it measures, its units, a
+typical value. General domain terms can be taught in the skippable deep
+background, but project-coined names and shorthand must be defined in the
+main flow — even a domain expert cannot know those. If more than a handful
+of terms recur, collect them in a small glossary callout right after the
+background.
+
 Budget: ~10 minutes reading time for a typical PR. A change too large for
 that should be explained in acts, not in a longer wall of text.
 
