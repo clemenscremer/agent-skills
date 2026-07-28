@@ -40,11 +40,23 @@ structure, in this order:
    part of the project (labelled as skippable), then the narrow background
    directly relevant to the arc. Never assume they watched the work happen.
 2. **Intuition before details.** State the goal of the arc and the *why*
-   before any implementation. One highlighted intuition box per act. Use
+   before any implementation. Open each act with a one-line **plain-words
+   summary** — what happened and why it mattered, in language that assumes
+   nothing — then the highlighted intuition box, then the detail. Use
    figures liberally: pick one or two **diagram families** and reuse them
    across acts — e.g. a simplified sketch of what the user sees, or a
    system/dataflow diagram with example data flowing through it. HTML/SVG
-   diagrams, never ASCII art.
+   diagrams, never ASCII art. Two rules on *what* to draw:
+   - **If a named metric or mechanism cannot be pictured from the prose,
+     draw it.** Abstract quantities need a figure more than architecture
+     does — a reader nods past "reach-averaged anomaly error" and never
+     notices they did not follow it. One orientation figure early, defining
+     the regions or objects the rest of the vocabulary names, repays itself
+     across every later act.
+   - **Nothing may exist only in a caption.** Anything a figure names carries
+     the identical name in the body text and gets at least one sentence of
+     definition there. Names drifting between figure, prose and the
+     underlying record is the commonest way a packet quietly stops cohering.
 3. **Literate walk, narrative order.** Present the work as acts of a story
    (what was tried → what was found → what that forced next), not
    chronological minutiae or files-in-alphabetical-order. Include the load-
@@ -62,7 +74,10 @@ symbol before its first use: what it measures, its units, a typical value.
 General domain terms can be taught in the skippable deep background, but
 project-coined names and shorthand must be defined in the main flow — even a
 domain expert cannot know those. If more than a handful of terms recur,
-collect them in a small glossary callout right after the background.
+collect them in a small glossary callout right after the background — and make
+it **bidirectional**: anchor-link every in-text occurrence back to its entry so
+the reader never scrolls hunting for a definition. Check that the links resolve
+in both directions; orphaned anchors are worse than no anchors.
 
 Budget: ~10 minutes reading time. If the arc needs more, split into acts, not
 into a longer document.
@@ -118,4 +133,19 @@ comparison worlds). The compact core rules:
 - Every number in an artifact must trace to a source in the repo (results
   file, experiment record, PR). An explainer is a *view* of the record, never
   a second source of truth.
+- **Cite external work inline at first mention** — author, year, title, DOI —
+  not only in a trailing reference list, so the reader meets the provenance
+  where the claim is made. And **verify each DOI against the publisher record
+  rather than recalling it**: a plausible-looking wrong DOI in a shared
+  artifact is worse than no citation.
+- **List humans as participants; the agent is not one.** A debrief is a team
+  artifact, not a session log. Attribute decisions to whoever made them, and
+  credit the contributions you describe — a reader should never find their own
+  catch reported anonymously beside a problem they are being shown.
+- **Re-verify status claims before republishing.** "Still blocked", "awaiting
+  approval", "not yet filed", "X hasn't arrived yet" age faster than anything
+  else in a packet, and are exactly what a reader acts on. Re-check them
+  against the world on every regeneration, and re-read the whole file before
+  republishing — an artifact that still describes work you have since finished
+  will contradict itself in front of the person you wrote it for.
 - If the project has a lint/CI for docs, the artifacts must pass it.
