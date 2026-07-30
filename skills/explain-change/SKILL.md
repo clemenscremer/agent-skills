@@ -38,12 +38,24 @@ One document, fixed structure, in this order:
    before any real code. Use figures liberally: pick one or two **diagram
    families** and reuse them throughout — e.g. a simplified sketch of the UI
    the user sees, or a system/dataflow diagram *with example data flowing
-   through it*. Build diagrams in HTML/SVG, never ASCII art.
+   through it*. Build diagrams in HTML/SVG, never ASCII art. Two rules on
+   *what* to draw:
+   - **If a named metric or mechanism cannot be pictured from the prose,
+     draw it.** Abstract quantities need a figure more than architecture
+     does — a reader nods past an unpictured metric and never notices they
+     did not follow it. One orientation figure early, defining the objects
+     the rest of the vocabulary names, repays itself across the whole
+     walkthrough.
+   - **Nothing may exist only in a caption.** Anything a figure names carries
+     the identical name in the body text and gets at least one sentence of
+     definition there. Names drifting between figure, prose and the code is
+     the commonest way an explainer quietly stops cohering.
 3. **Literate walkthrough.** Present the change in execution or conceptual
    order — never file-tree or alphabetical order. Group related hunks into
-   one step. Before each code block, one or two paragraphs of prose
-   explaining *why* this piece exists and how it fits the flow; the code then
-   confirms what the prose promised.
+   one step. Open each step with a one-line **plain-words summary** — what
+   this piece does and why it matters, in language that assumes nothing —
+   then one or two paragraphs of prose explaining *why* this piece exists
+   and how it fits the flow; the code then confirms what the prose promised.
 4. **Honest edges.** What the change deliberately does not handle, known
    weaknesses, follow-ups it creates. An explainer that sells the change
    teaches the reader to distrust the next one.
@@ -63,7 +75,10 @@ typical value. General domain terms can be taught in the skippable deep
 background, but project-coined names and shorthand must be defined in the
 main flow — even a domain expert cannot know those. If more than a handful
 of terms recur, collect them in a small glossary callout right after the
-background.
+background — and make it **bidirectional**: anchor-link every in-text
+occurrence back to its entry so the reader never scrolls hunting for a
+definition. Check that the links resolve in both directions; orphaned
+anchors are worse than no anchors.
 
 Budget: ~10 minutes reading time for a typical PR. A change too large for
 that should be explained in acts, not in a longer wall of text.
@@ -86,5 +101,12 @@ that should be explained in acts, not in a longer wall of text.
   in the source and confirm this, and if a headless browser is available,
   open the file once: page renders, quiz interactions work, zero console
   errors.
+- When the change implements or leans on published work, **cite it inline at
+  first mention** — author, year, title, DOI — not only in a trailing
+  reference list. **Verify each DOI against the publisher record rather than
+  recalling it**; if it cannot be verified, omit the DOI rather than guess —
+  a plausible-looking wrong DOI is worse than no citation.
 - Every claim and number must trace to the diff or the repo. An explainer is
   a *view* of the change, never a second source of truth — and never spin.
+  Label each number **measured / derived / assumed** — derived numbers read
+  as measured unless marked.
