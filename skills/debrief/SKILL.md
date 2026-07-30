@@ -137,7 +137,8 @@ comparison worlds). The compact core rules:
   not only in a trailing reference list, so the reader meets the provenance
   where the claim is made. And **verify each DOI against the publisher record
   rather than recalling it**: a plausible-looking wrong DOI in a shared
-  artifact is worse than no citation.
+  artifact is worse than no citation. If a DOI cannot be verified, omit it
+  rather than guess.
 - **List humans as participants; the agent is not one.** A debrief is a team
   artifact, not a session log. Attribute decisions to whoever made them, and
   credit the contributions you describe — a reader should never find their own
