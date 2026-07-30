@@ -108,3 +108,5 @@ that should be explained in acts, not in a longer wall of text.
   a plausible-looking wrong DOI is worse than no citation.
 - Every claim and number must trace to the diff or the repo. An explainer is
   a *view* of the change, never a second source of truth — and never spin.
+  Label each number **measured / derived / assumed** — derived numbers read
+  as measured unless marked.

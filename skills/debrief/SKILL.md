@@ -132,7 +132,10 @@ comparison worlds). The compact core rules:
 - Match the project's visual identity if one exists; otherwise stay plain.
 - Every number in an artifact must trace to a source in the repo (results
   file, experiment record, PR). An explainer is a *view* of the record, never
-  a second source of truth.
+  a second source of truth. Label each number **measured / derived /
+  assumed** — derived numbers read as measured unless marked, and an
+  *assumed* number in a retrospective packet is itself a finding: say why it
+  had to be assumed.
 - **Cite external work inline at first mention** — author, year, title, DOI —
   not only in a trailing reference list, so the reader meets the provenance
   where the claim is made. And **verify each DOI against the publisher record
@@ -148,5 +151,8 @@ comparison worlds). The compact core rules:
   else in a packet, and are exactly what a reader acts on. Re-check them
   against the world on every regeneration, and re-read the whole file before
   republishing — an artifact that still describes work you have since finished
-  will contradict itself in front of the person you wrote it for.
+  will contradict itself in front of the person you wrote it for. The
+  cheapest defence: don't restate what a living tracker (backlog, issue
+  board, decision register) already tracks — **point at it**. Duplication is
+  the staleness.
 - If the project has a lint/CI for docs, the artifacts must pass it.
