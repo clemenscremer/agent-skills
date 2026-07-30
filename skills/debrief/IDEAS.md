@@ -11,6 +11,11 @@ forward-looking sibling? Nothing here is implemented.
 > [references/decision-register.md](references/decision-register.md).
 > Everything else — plan mode, the T2/T3 choice — remains deliberately
 > unimplemented pending the settling signals at the bottom.
+>
+> **Second addendum, same day.** T2 is now implemented — forward-mode
+> dispatch in SKILL.md plus [references/plan.md](references/plan.md) — on
+> owner priority, ahead of the reviewer-cycle signal. The trigger-dilution
+> question is therefore live and testable; T3 remains open.
 
 ## The idea in one paragraph
 
