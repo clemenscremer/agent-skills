@@ -72,7 +72,12 @@ structure, in this order:
    (what was tried → what was found → what that forced next), not
    chronological minutiae or files-in-alphabetical-order. Include the load-
    bearing numbers inline, and a "where it lives" pointer (paths, records,
-   PRs) after each act.
+   PRs) after each act — **in internal packets only.** A packet circulated
+   outside the knowledge base it was written in drops those pointers: they
+   are dead links for that reader and imply a shared substrate they cannot
+   open. Decide the audience before drafting; see
+   [references/plan.md](references/plan.md) § *Audience*, which applies in
+   both tenses.
 4. **Honest negatives get equal billing.** Failed acceptance criteria,
    reversed assumptions, and bugs found are often the most valuable content.
    Never smooth them into a success narrative.
@@ -141,6 +146,18 @@ comparison worlds). The compact core rules:
   the project's shared vocabulary (or establish it) rather than session
   shorthand.
 - Match the project's visual identity if one exists; otherwise stay plain.
+- **Equations: use MathML, not a maths CDN.** When a packet carries real
+  equations, typeset them — an ASCII transcription like `d²h/dx²` is where
+  sign errors hide, and a reader cannot check a derivation they cannot read.
+  MathML renders natively in current browsers with no script and no network,
+  so it keeps the document self-contained; loading KaTeX or MathJax from a CDN
+  breaks that and fails offline. Give every non-trivial rearrangement its
+  **intermediate steps with the operation named** ("square both sides",
+  "divide by h_ext, which is positive") rather than jumping from premise to
+  result — and independently re-derive the result before publishing rather
+  than copying it forward. A printed equation that cannot produce the printed
+  solution is the single most embarrassing defect a technical packet can ship,
+  and it survives every review that only reads the prose.
 - Every number in an artifact must trace to a source in the repo (results
   file, experiment record, PR). An explainer is a *view* of the record, never
   a second source of truth. Label each number **measured / derived /

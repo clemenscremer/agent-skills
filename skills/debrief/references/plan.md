@@ -34,6 +34,54 @@ What changes is the reader's job: not *understand what happened* but
   what, and the first concrete step.
 - **"What this touches"** replaces "where it lives": nothing exists yet, so
   each act points at the systems, records, and people the work would touch.
+  **Internal only** — see the audience rule below.
+
+## Audience: internal draft vs circulated document
+
+A plan brief has two audiences and they want different documents. Decide
+which you are writing *before* drafting, and say so at the top, because two
+sections are conditional on the answer.
+
+**Internal draft** — for the author and whoever shares their knowledge base.
+Keeps everything, including the pointers and the capacity judgements. This is
+a working document.
+
+**Circulated document** — a brief, proposal, or handover going to
+collaborators, supervisors, or reviewers. Two things come out:
+
+1. **Cut the "what this touches" pointers.** They name files, records, and
+   internal IDs in one person's knowledge base. To everyone else they are
+   dead links that imply a shared substrate the reader has no access to, and
+   they push the reader's eye to plumbing instead of the argument. If an act
+   genuinely depends on an external artifact the reader can open, cite it
+   normally in the prose. (Same rule for the backward tense: "where it
+   lives" is internal.)
+2. **Never publish a named person's capacity as a claim about them.** "X's
+   workload is the binding constraint" is a judgement about a colleague,
+   written where they and their supervisor will both read it — and in a
+   handover it is not even actionable. State the *scheduling* constraint
+   instead ("this phase needs one person's undivided attention for ~3 weeks
+   and cannot be parallelised"), and let the humans allocate. Ownership rows
+   say what a person would *carry*, never how much they have left.
+
+The two are one document with a flag, not two documents — write the internal
+version, then strip. Deriving the circulated version from the internal one
+keeps them from drifting; maintaining two drafts guarantees they do.
+
+## Handovers
+
+A handover is a circulated plan brief whose reader is an *implementer*, not a
+decider. The inversions above all hold, plus:
+
+- **Assume no knowledge-base access at all.** Every number, equation, and
+  dataset the implementer needs is restated in the document. A handover that
+  requires the author to be reachable has failed.
+- **The register becomes a "decisions someone else must make" list.** The
+  implementer must not silently resolve them; say which are theirs and which
+  are not.
+- **End in an executable checklist** with a pass condition per step, so
+  "done" is checkable by the implementer rather than adjudicated by the
+  author.
 
 ## The review loop
 

@@ -16,6 +16,31 @@ forward-looking sibling? Nothing here is implemented.
 > dispatch in SKILL.md plus [references/plan.md](references/plan.md) — on
 > owner priority, ahead of the reviewer-cycle signal. The trigger-dilution
 > question is therefore live and testable; T3 remains open.
+>
+> **Third addendum, 2026-07-31 — the first real circulation cycle happened,
+> and it changed the craft rather than the architecture.** Two plan-mode
+> packets were written for real reviewers, and the feedback was not about
+> tense or structure. It was that **the packet had the wrong audience baked
+> in**: "what this touches" pointers and a named person's workload are
+> internal-draft content, and putting them in a document going to a
+> supervisor is a defect. Implemented in `plan.md` as an explicit
+> internal-versus-circulated flag with a strip rule, cross-referenced from
+> SKILL.md so it binds in both tenses, plus a short handover subsection
+> (circulated plan brief, reader is an implementer, ends in an executable
+> checklist). Also added to shared craft: **typeset equations as MathML**,
+> after a sign error in an ASCII-transcribed PDE survived several revisions
+> of a packet and was caught only by re-deriving it — an equation printed as
+> text reads as notation rather than as a claim.
+>
+> Two signals for the trajectory question, pulling in opposite directions.
+> Toward T3/T6: the audience rule had to be written in `plan.md` and
+> *referenced* from SKILL.md because it genuinely applies to both tenses,
+> which is exactly the shared-craft duplication T6 exists to solve — the
+> second such rule to land in the wrong file. Against urgency: no reviewer
+> has yet responded against decision IDs, so the async multi-reviewer case
+> is still unevidenced. Lean unchanged: stay at T2, but the next
+> both-tenses craft rule should trigger the T6 extraction rather than
+> another cross-reference.
 
 ## The idea in one paragraph
 
