@@ -159,3 +159,35 @@ one real reviewer cycle has happened. T3 becomes a mechanical refactor once
 plan-mode content is known rather than guessed — and the register already
 contains the decision payload a plan brief would present, so the packet is
 cheap to add later and expensive to guess at now.
+
+---
+
+## Addendum, 2026-08-02 — self-containment has two halves, and I only had one
+
+The skill reasoned carefully about *network* dependency (that is why it mandates
+MathML over a maths CDN) and then told you to build JS-drawn figures and a
+JS-gated quiz without noticing those fail the same test. A packet shipped for
+review came back with "saw the sliders but nothing else": the reader's viewer
+rendered the HTML and silently refused the script, so five of six figures were
+blank space and all five quiz answers were unreachable. The file was fine. The
+assumption was not.
+
+Two rules now in SKILL.md, both cheap:
+
+1. **Pre-render everything at build time; let the script replace it.** The static
+   snapshot is also the printable version, which the skill had been claiming
+   without earning.
+2. **Verify with `java_script_enabled=False` as well as True**, and require the
+   figure counts to match. Two lines of playwright; it is the only way to see what
+   a locked-down reader sees.
+
+A third, smaller, from the same session: an interactive control's default must
+agree with the static content beside it. A stepped slider snaps to its own grid,
+so compute the pre-rendered state at the value the control actually lands on — or
+the figure jumps on first touch and the neighbouring prose is briefly wrong.
+
+**Worth generalising.** The failure was not "I forgot a fallback". It was assuming
+the delivery environment resembled the authoring one. The audience rule already in
+this skill says decide who reads it before drafting; this says decide *where* they
+read it, and verify there.
+

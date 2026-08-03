@@ -40,11 +40,22 @@ in a decision register instead of a quiz.
 
 ## Artifact 1 — the explainer packet (always)
 
-One self-contained document (no external dependencies, so it survives
-offline and can be printed). Choose the format deliberately: **markdown**
+One self-contained document. Choose the format deliberately: **markdown**
 when the packet lives in the repo's docs and must pass docs CI; **HTML**
-when interactive figures or the interactive quiz earn their keep. Fixed
-structure, in this order:
+when interactive figures or the interactive quiz earn their keep.
+
+**Self-contained means no network AND no script dependency.** A CDN is the
+obvious failure, but a figure that only exists once JavaScript has drawn it
+fails the same test for a different reason: email clients, cloud document
+previews (SharePoint, OneDrive, Teams, Drive) and many corporate viewers
+render the HTML and silently refuse the script. The reader then sees
+headings, prose and empty space where the evidence was — with no way to tell
+that anything is missing. **Every figure and every answer must be present in
+the delivered markup.** Interactivity is an enhancement layered over content
+that already reads: pre-render the default state at build time and let the
+script replace it when it runs. Say so in the document too — one line beside
+any control, telling a reader whose sliders do nothing why, and that they
+lose nothing else. Fixed structure, in this order:
 
 1. **Background first, two layers.** What existed before this arc, in terms
    a returning teammate needs: a deep background for a reader new to this
@@ -106,6 +117,11 @@ understood the substance of the arc, but no gotchas or trivia. Rules:
 - In HTML packets, make it **interactive multiple-choice**: clicking an
   option reveals correct/incorrect plus a one-line explanation. In markdown
   packets, use collapsed answers (`<details>`).
+- **Never let the script be the only route to an answer.** A quiz whose
+  explanations are `display:none` until JavaScript reveals them becomes, in a viewer
+  that blocks scripts, five questions with no answers — strictly worse than shipping
+  no quiz. Put each explanation in a native `<details>` element so it is reachable
+  unaided, and let the click handler merely open it and mark the choice.
 - Target the **load-bearing concepts and the surprises** — the things that
   change what the reader would decide next. Never quiz trivia.
 - Prefer "why" over "what": *why is X the correct baseline?*, *why must Y not
@@ -135,6 +151,10 @@ comparison worlds). The compact core rules:
   interactions work, zero console errors — and check the artifact's own
   claims against what it displays (it may teach *you* your annotation was
   wrong; fix the annotation, and say so).
+- **Pre-render the default state, so the micro-world is still a figure with
+  scripts off.** A playground that degrades to an empty box teaches nothing
+  to a reader in a cloud preview, and it will not print. Ship the static
+  snapshot of the state your annotation discusses, then upgrade it.
 
 ## Placement and craft
 
@@ -158,6 +178,19 @@ comparison worlds). The compact core rules:
   than copying it forward. A printed equation that cannot produce the printed
   solution is the single most embarrassing defect a technical packet can ship,
   and it survives every review that only reads the prose.
+- **Verify the artifact twice: once with scripts enabled, once with scripts
+  disabled.** Headless browsers make this two lines
+  (`browser.new_context(java_script_enabled=False)`), and it is the only way to see
+  what a reader in a locked-down viewer sees. Both passes must show every figure and
+  make every answer reachable; the counts should match. Also check the artifact's
+  claims against what it actually displays — a computed panel will happily
+  contradict the sentence you wrote about it, and it may teach *you* that your
+  annotation was wrong. Fix the annotation, and say so.
+- **An interactive control's initial state must agree with the static content around
+  it.** If a slider's default and the pre-rendered figure disagree, the figure jumps
+  on first touch and every number in the neighbouring prose is briefly a lie. Watch
+  quantised inputs especially: a stepped range slider snaps to its own grid, so
+  compute the static state at the value the control will actually land on.
 - Every number in an artifact must trace to a source in the repo (results
   file, experiment record, PR). An explainer is a *view* of the record, never
   a second source of truth. Label each number **measured / derived /
