@@ -16,15 +16,14 @@ The signal is fragile. Everything below exists to protect it from the two
 things that destroy it: **teaching before the learner has committed to
 anything**, and **grading an answer more generously than it deserves**.
 
-**Provenance:** backward design (Wiggins & McTighe) for scoping; the
-pretesting effect and VanLehn's impasse hypothesis for why the cycle opens
-with a question; expertise reversal (Kalyuga; Chen et al. meta-analysis) for
-the assistance dial; Barton's diagnostic questions and Hestenes-style
-four-tier diagnostics for the probes. Adapted from and argued against a dozen
-prior skills and shipped tutors — see [PRIOR-ART.md](PRIOR-ART.md), which
-records what was taken from where and what was deliberately rejected.
-Sibling to `explain-change`, `debrief` and `micro-world` — those teach *this
-project's* work; teach-me teaches a body of knowledge that exists outside it.
+**Provenance:** backward design for scoping, the pretesting and impasse
+results for the cycle order, expertise reversal for the assistance dial,
+diagnostic-question design for the probes — plus a dozen prior skills and
+shipped tutors, adapted from and argued against. [PRIOR-ART.md](PRIOR-ART.md)
+records what was taken from where, what was rejected, and how far each piece
+of evidence actually reaches. Sibling to `explain-change`, `debrief` and
+`micro-world` — those teach *this project's* work; teach-me teaches a body of
+knowledge that exists outside it.
 
 ## Standing rules
 
@@ -109,8 +108,8 @@ until the purpose is named.
 offering any destination, look for what they have already written on this
 topic — issues, notes, plans, prior artifacts, the project's own pages. That
 record usually *contains* the destination, at a specificity no interview will
-reach, and it tells you what they already hold; spend no question on anything
-it answers. A menu built only from the field's own taxonomy will offer the
+reach; spend no question on anything it answers. What it does **not**
+reliably tell you is what the learner holds — see Phase 2. A menu built only from the field's own taxonomy will offer the
 textbook framing of a question the learner has already moved past. If no such
 record exists, say you looked. Then reconnoitre the field itself — its
 branches, its live disagreements, what changed recently — because
@@ -177,11 +176,15 @@ Not before it. The map arrives in the same message as the first teaching.
   capability statement — repeatedly ask what must already hold. Copying
   chapter headings produces coverage, which is not the goal. Mark each on or
   off the critical path and invite objection.
-- **Where a written record exists, placement is reading, not probing.** Mark
-  components held on the evidence in the record, and name the line you are
-  reading each one from. For a learner working in a field they document, this
-  is most of the map — spend probes only where the record is silent or
-  ambiguous.
+- **Placement can be read off a record the learner wrote alone.** Mark
+  components held on that evidence, name the line you read each one from, and
+  spend probes only where it is silent.
+- **A record they co-authored with an agent is not that evidence.** It tells
+  you what the *pair* produced, and the pair's output diverges from the
+  person's understanding precisely on the material the agent supplied. Mine
+  it for the destination, the vocabulary and the constraints; probe for the
+  placement. Read backwards, it marks components solid that were never
+  tested and skips exactly the chunks the learner wanted.
 - **Otherwise placement is one first-step probe**, not a battery: *"here's a
   realistic case — what's your first move, and why that one?"* The choice of
   tool is the signal; a full solution mostly measures patience. You are
@@ -194,8 +197,8 @@ Not before it. The map arrives in the same message as the first teaching.
 ## Phase 3 — The loop
 
 ```
-1  PRE-PROBE   one prediction or first-step question at the frontier;
-               take the commitment before anything is shown
+1  PRE-PROBE   new topic only — one prediction or first-step question,
+               commitment taken before anything is shown; else start at 2
 2  CHUNK       300-600 words, one component, assistance set by its status
 3  KEY         write the expected answer + distinguishing elements
                into the learner model  ← before sending the post-probe
@@ -205,12 +208,21 @@ Not before it. The map arrives in the same message as the first teaching.
 7  STEER       remediate / advance / branch / park
 ```
 
-**Open with the pre-probe, before teaching.** A question the learner probably
-cannot answer yet, with their commitment taken first. Failing it is not a
-wasted turn: it is the only probe whose answer is uncontaminated by your
-phrasing, an unsuccessful attempt still improves what the chunk afterwards
-does, and reaching an impasse is close to a precondition for learning from an
-explanation. Say that, so it does not read as an exam.
+**Open with the pre-probe when the topic is genuinely new to the learner.** A
+question they probably cannot answer yet, with their commitment taken first.
+Failing it is not a wasted turn: it is the only probe whose answer is
+uncontaminated by your phrasing, an unsuccessful attempt still improves what
+the chunk afterwards does, and reaching an impasse is close to a precondition
+for learning from an explanation. Say that, so it does not read as an exam.
+
+**Invert the order when they are already working in the topic** — they
+arrived naming specific gaps, or a record shows weeks of work behind the
+question. There is no impasse to manufacture: they are already at one, which
+is why they asked. A question first reads as an entrance exam with extra
+steps and spends the one thing the pre-probe exists to protect, which is
+their willingness to continue. Teach the chunk, then probe. **If a learner
+tells you twice that they want content first, that is not a preference to
+route around.**
 
 **Assistance is a dial keyed to the component, not to the session:** `full
 chain` → `one link faded` → `setup only` → `bare problem`, moving one rung per
@@ -240,9 +252,7 @@ that evidence actually reaches.
 parametric relationship** — "the answer depends on the setup" is the case
 where a slider beats four hundred words, and where the learner can rediscover
 the boundary instead of being told it. Use the `micro-world` skill if
-installed. A misconception like *"the indices are a property of the model"*
-dies instantly against a control that shrinks an input range and drops the
-index; it dies slowly against prose.
+installed.
 
 Probe construction, the classification scheme, the difficulty controller and
 the escalation ladder all live in

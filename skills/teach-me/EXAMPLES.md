@@ -1,10 +1,8 @@
 # Examples
 
-One worked testbed. **This skill has not yet been hardened by use** — unlike
-`debrief`'s examples, nothing below is a story about a session that happened.
-It is the case the skill was designed against, worked out far enough to be a
-test: if a teach-me session on this topic does not surface these gaps, the
-skill is not doing its job.
+Two things: the testbed the skill was designed against, and the first real
+session, which broke it in four places. The testbed comes first because the
+session was run on it.
 
 ## The testbed: global sensitivity analysis, for a coastal modeller
 
@@ -190,3 +188,49 @@ worth reading as signals: mirror the language and keep the terms in the
 language of the tooling, and **do not close every turn with an offer** — a
 learner saying "yes" to the fourth offer in a row is being polite, not
 choosing.
+
+## The first real session — four failures, all in the first two phases
+
+Run on the topic above, with the engineer whose transcript motivated the
+skill. Every rule that changed came from watching it go wrong, not from
+reasoning about it beforehand.
+
+**The destination menu was wrong.** The skill said reconnoitre the topic, so
+the field was surveyed and a menu was built from its canonical four settings —
+factor fixing, prioritisation, variance cutting, mapping. None fitted: the
+learner's actual deliverable crossed two of them and its payload was the
+off-diagonal. Only a manual redirect to their own project notes recovered it,
+and those notes contained the destination at a specificity no interview would
+have reached. Hence *reconnoitre the learner's own record first, then the
+field* — the biggest single behavioural change in the skill.
+
+**Half the scoping answers did not fit the options.** Two of four came back as
+"check the repo notes" and "1 and 4 mostly". The skill only said to accept
+answers. It now says a non-conforming answer is evidence the taxonomy is
+wrong: revise the destination, never average.
+
+**Reading the record for placement marked six components solid that had never
+been probed — and it was wrong.** This is the subtle one, and it broke the
+rule the *previous* failure had just added. The record was a project knowledge
+base co-authored with an agent. Read as evidence about the learner it says
+they hold conductivity confounds, sampling design and cost arithmetic; read
+correctly it says the *pair* produced those pages. The first chunk delivered
+on that basis landed on a component so far past the learner's actual question
+that they replied, in effect, *this is too specific and you still have not
+taught me anything*. What they wanted was the foundational layer the record
+never had to spell out, precisely because the agent supplied it.
+
+**And the pre-probe was wrong for this learner.** The skill opens each cycle
+with a question, on good evidence — pretesting benefits survive failed
+retrieval, and explanation lands poorly without an impasse. But this learner
+was already three weeks into the topic, had named their gaps, and asked twice
+for content before questions. There was no impasse to manufacture. The rule is
+now conditional on whether the topic is genuinely new, with an explicit line
+that a request stated twice is not a preference to route around.
+
+**What the session says about the skill's own evidence base.** Three of these
+four are failures of the scoping phase, which is the part with the least
+research behind it — the empirical anchors in
+[PRIOR-ART.md](PRIOR-ART.md) are almost entirely about the teaching loop.
+That asymmetry is worth knowing before trusting the loop's rules more than the
+scoping ones.
