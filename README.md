@@ -27,6 +27,14 @@ Skills that keep human understanding in step with agent output — based on Geof
 | [debrief](skills/debrief/SKILL.md) | close of a work arc (multi-PR / multi-session) | Background-first explainer packet with honest negatives and a check-your-understanding quiz; committed to the project's docs. |
 | [micro-world](skills/micro-world/SKILL.md) | behavior easier to inhabit than to read | Single-purpose interactive teaching page on real project data: parameter playground, execution scrubber, or comparison world. |
 
+### Learning
+
+Same premise pointed outward: those three teach *this project's* work, this one teaches a body of knowledge that exists outside it.
+
+| Skill | Fires on | Description |
+|---|---|---|
+| [teach-me](skills/teach-me/SKILL.md) | "teach me X", "grill me on X", resuming a topic | Adaptive tutoring loop with a destination: scope to the decision the knowledge must feed, then teach in chunks and probe, inferring the learner's state from their answers and steering at the gap. Persists a learner model between sessions; ends in an optional study pack with a spaced re-test. |
+
 ### Coding discipline
 
 | Skill | Description |
