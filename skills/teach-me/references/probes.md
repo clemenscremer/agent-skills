@@ -198,6 +198,25 @@ Two further reading signals:
 **A vague answer is not a correct answer.** Ask the one follow-up that
 separates the readings.
 
+## The pre-send audit
+
+Before sending a correction or a piece of feedback, check it against the four
+dimensions that a peer-reviewed tutor-evaluation rubric scores. They are cheap
+to run and they catch the commonest empty response — the content-free nudge:
+
+1. **Mistake identification** — did I name the actual error, rather than
+   gesture at "something's off here"?
+2. **Mistake location** — did I point to exactly where it lives, rather than
+   at the answer as a whole?
+3. **Providing guidance** — did I give a real lever — an explanation, a
+   boundary case, a hint with traction — rather than either the full answer or
+   an encouraging noise?
+4. **Actionability** — is the learner's next move unambiguous?
+
+Specialised systems score worst on the third, and it is the one worth the most
+attention: "think about it again" passes 1, 2 and 4 and fails the only
+dimension that helps.
+
 ## The escalation ladder
 
 When an answer stalls, climb one rung at a time: **pump** ("what else?") →

@@ -18,6 +18,8 @@ because an unverified claim you can see is safer than one you cannot.
 | **Engineered tutors** | [`mhingston/agent-skills teach-me`](https://github.com/mhingston/agent-skills), [`cdmorozov/claude-tutors`](https://github.com/cdmorozov/claude-tutors) | Goal-backwards concept graph; a mastery ladder with named evidence per rung; confidence taken before the verdict; a hard question budget |
 | **Interview engines** | Matt Pocock's `grill-me`, `superpowers/brainstorming` | Every question ships with your recommended answer; one question per message |
 | **Diagnosis** | Exam-prep distractor libraries; Barton's diagnostic questions | Every wrong option maps to a *named* misconception |
+| **Shipped tutors** | LearnLM / Gemini Guided Learning, ChatGPT Study Mode, Claude Learning Mode, Khanmigo | Pedagogy as a tunable parameter rather than a fixed persona; a mode-switch gate out of tutoring; never let the model check its own arithmetic |
+| **Tutor-turn rubrics** | MRBench (arXiv:2412.09416); BEA 2025 shared task | Four scoreable dimensions — mistake identification, mistake location, providing guidance, actionability |
 
 Two structural facts worth knowing before adding another teaching skill:
 
@@ -48,6 +50,20 @@ Two structural facts worth knowing before adding another teaching skill:
 
 ## What it rejected, and why
 
+- **Default-on withholding.** Every shipped tutor examined either ships an
+  escape hatch or gets bypassed and resented without one. Anthropic's own
+  Learning Mode instructions are the clearest case: they ask explicitly for a
+  *"balance between pure Socratic dialogue and direct instruction"*, and for an
+  immediate switch to direct-assistant mode the moment the user's ask is a
+  concrete artifact. Standing rule 1 and the stand-down section are this skill's
+  version. Khanmigo is the counter-example — forced withholding produced a
+  documented cheating workaround and, per Sal Khan, *"for a lot of students, it
+  was a non-event."*
+- **Trusting the model's own arithmetic.** Khan Academy's stated root cause is
+  that a language model predicts *"the most probable numbers to come next,"*
+  and *"the most probable number in the training data is not always the correct
+  answer."* Their fix was to route calculation through a deterministic tool.
+  Standing rule 6 is the same rule.
 - **Pure Socratic withholding.** The measured failure of frontier models
   asked to tutor is *leaking* the answer, not withholding it — on the
   standard pedagogical benchmark a strong model identifies mistakes correctly
