@@ -113,9 +113,15 @@ not understand well enough to ask.
 
 The key lives in the file rather than in your head because thinking does not
 survive compaction and a disputed verdict may be challenged many turns later.
-The learner can read it — that is acceptable: the file is theirs, and a
-learner who reads their own answer key has opted out of being measured, which
-is their call to make.
+Do not hold the write until the answer arrives — a key written afterwards is
+worth nothing, which is the whole point.
+
+**While a probe is open, the file therefore contains its answer.** Mark it as
+a spoiler where it sits, warn the learner in the message that sends them to
+the file, and do not walk them through the model mid-probe — cycle boundaries
+only. The learner keeps the choice: reading your own answer key is opting out
+of being measured, which is theirs to decide, but they have to be told the
+choice exists.
 
 ## Construction rules
 

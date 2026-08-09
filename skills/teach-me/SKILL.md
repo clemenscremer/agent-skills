@@ -101,11 +101,21 @@ Asking a competent adult to account for what they know before you have given
 them anything is the fastest way to lose them, and it is unnecessary: level
 is inferred in Phase 2 and from *how* they answer these questions.
 
-For many topics this phase is also substantively required rather than merely
-polite. In global sensitivity analysis, for instance, the literature itself
-holds that the question is ill-posed until the purpose is named — the same
-topic taught for screening-before-calibration and for apportioning a design
-value has different content, different cost and a different correct method.
+For many topics this phase is substantively required, not merely polite: in
+global sensitivity analysis the literature itself holds the question ill-posed
+until the purpose is named.
+
+**Reconnoitre the learner's own record first, then the field.** Before
+offering any destination, look for what they have already written on this
+topic — issues, notes, plans, prior artifacts, the project's own pages. That
+record usually *contains* the destination, at a specificity no interview will
+reach, and it tells you what they already hold; spend no question on anything
+it answers. A menu built only from the field's own taxonomy will offer the
+textbook framing of a question the learner has already moved past. If no such
+record exists, say you looked. Then reconnoitre the field itself — its
+branches, its live disagreements, what changed recently — because
+destinations offered from stale priors send the learner somewhere the field
+has left, and neither of you will notice.
 
 **Target one message. Hard cap of two rounds.** Ceremony paid before any
 value is delivered is where sessions die.
@@ -119,8 +129,6 @@ value is delivered is where sessions die.
   review Thursday, 2: skip, 3: no idea."* "No idea" is itself diagnostic.
 - **Give every question a fallback** so the interview cannot deadlock. If it
   goes unanswered, state the assumption in one line and proceed.
-- **Answer for yourself anything the repo, the project files or the web can
-  answer.** Do not spend a question on it.
 - Use `AskUserQuestion` here if it is available — scoping is exactly the case
   where a menu of recommended options is right. **Never** use it for a probe.
 
@@ -134,11 +142,20 @@ spacing later.
 
 **Name the conflict when there is one.** *"You asked for X. The decision you
 described actually needs Y. Here is what I propose to skip — object now."*
+This applies to any interview answer the record contradicts, the retention
+horizon especially: a learner who says "this quarter" while their own notes
+carry a deadline this week has two horizons, and the near one governs.
 Sometimes the correct output of this phase is "you don't need to learn this,
 you need Z" — say so; it is credible and it saves a professional real time.
 
 **Then offer 2-4 destinations**, each with what it includes *and what it
 deliberately leaves out*. The exclusions are what make the session converge.
+
+**An answer that does not fit your options is a finding about the options.**
+If the learner replies "neither", picks two, or points you at something
+instead of choosing, the taxonomy you offered is wrong for their case. Revise
+the destination before proceeding — never average the answers into one that
+nobody chose.
 
 **Exit criteria, all three:**
 
@@ -160,11 +177,16 @@ Not before it. The map arrives in the same message as the first teaching.
   capability statement — repeatedly ask what must already hold. Copying
   chapter headings produces coverage, which is not the goal. Mark each on or
   off the critical path and invite objection.
-- **Placement is one first-step probe**, not a battery: *"here's a realistic
-  case — what's your first move, and why that one?"* The choice of tool is
-  the signal; a full solution mostly measures patience. You are locating the
-  frontier between what they can already do and what they are ready to learn;
-  everything below it is inferred, never asked about.
+- **Where a written record exists, placement is reading, not probing.** Mark
+  components held on the evidence in the record, and name the line you are
+  reading each one from. For a learner working in a field they document, this
+  is most of the map — spend probes only where the record is silent or
+  ambiguous.
+- **Otherwise placement is one first-step probe**, not a battery: *"here's a
+  realistic case — what's your first move, and why that one?"* The choice of
+  tool is the signal; a full solution mostly measures patience. You are
+  locating the frontier between what they can already do and what they are
+  ready to learn; everything below it is inferred, never asked about.
 - Spend a second probe only on a **false friend** — a term that means
   something else in their home field, or a method that resembles one they
   know and is not. Those errors are invisible to the learner by construction.
@@ -209,11 +231,10 @@ conclude*.
 
 **Once per session, make the learner synthesise.** Hand over two or three
 real sources that disagree and react to *their* synthesis instead of
-delivering yours. Identical content delivered as a polished synthesis appears
+delivering yours. The same content delivered as a polished synthesis appears
 to produce shallower knowledge than making the learner build it, and adding
-citations to your own synthesis did not repair that in the studies that
-tested it — though the outcome measures there lean on self-report, so treat
-this as well-motivated rather than settled.
+citations did not repair that — see [PRIOR-ART.md](PRIOR-ART.md) for how far
+that evidence actually reaches.
 
 **Build a micro-world when the frontier component is a conditional or
 parametric relationship** — "the answer depends on the setup" is the case
@@ -243,6 +264,12 @@ longer, load-bearing before peripheral. Then:
   is a success.
 - **Park** after two failed reframings on one point. Say you are parking it
   and what would unpark it.
+
+**An unanswered probe is a signal about the session, not the learner.** They
+are busy, the timing is wrong, or the register is. Restate it once and offer
+the direct route in the same breath — *"or say so and I'll just teach it"*.
+If it goes unanswered again, teach directly and stop probing until they
+re-engage. Never ask a third time.
 
 **Do not scaffold what they already own.** When a learner demonstrates a
 component, skip its chunk and say you are skipping it.
@@ -294,33 +321,33 @@ resume path in Phase 0 is dead.
 shallow water, confident"* is resumable; *"struggled with dispersion"* is
 not, and compaction discards precisely the specifics steering depends on.
 
-**The model is negotiated, not editable.** Show it at cycle boundaries with
-your uncertainty visible — *"I think you have this, but I've seen one clean
+**The model is negotiated, not editable.** Show it at cycle boundaries — not
+mid-probe, since the file carries the open probe's answer key — with your
+uncertainty visible: *"I think you have this, but I've seen one clean
 demonstration"*. The learner may dispute an entry; the resolution is *"let me
 ask one question that would settle it"*, never *"fine, I'll tick it."*
 
 ## Anti-patterns
 
+The standing rules already forbid withholding, praise inflation and grading
+generously; these are the failures they do not cover.
+
 - **The essay.** Three paragraphs without asking anything: stop.
-- **Socratic withholding.** Refusing a direct answer to make the learner earn
-  it.
 - **The entrance exam.** Interrogating a learner about their level before
   giving them anything.
 - **The probe that contains its own answer.** If deleting your last paragraph
   would make the probe unanswerable, it is a comprehension check on your own
   prose. Leaking the answer — not withholding it — is the measured failure of
   frontier models asked to tutor.
-- **Grading the answer you were hoping for**, or capitulating when the
-  learner pushes back with a citation you have not read.
 - **Re-teaching a slip.** Wrong answer, sound reasoning, one bad input — fix
   the input. Re-explaining the concept there is both wrong and patronising.
 - **Counting in-session performance as learning.**
 - **Labelling your own probes easy/medium/hard.** Difficulty is whatever the
   last six answers say it was.
-- **Praise inflation**, **scaffolding an expert**, **teaching the topic
-  instead of the destination**, and **confident invention** — a fabricated
-  citation or an unchecked equation the learner cannot detect and will carry
-  into their own work.
+- **Scaffolding an expert**, **teaching the topic instead of the
+  destination**, and **confident invention** — a fabricated citation or an
+  unchecked equation the learner cannot detect and will carry into their own
+  work.
 
 ## Standing down
 

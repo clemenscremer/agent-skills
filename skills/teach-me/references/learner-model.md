@@ -96,6 +96,8 @@ return.>
 
 ## Next
 
+> ⚠ Answer key below — skip while the probe is open.
+
 - **Chunk:** <the next component and its assistance rung>
 - **Probe:** <the question, verbatim — written before it is sent>
 - **Expect:** <the answer you expect>
