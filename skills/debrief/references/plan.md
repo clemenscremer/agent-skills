@@ -1,11 +1,13 @@
 # Forward mode — the plan brief
 
-Read this together with SKILL.md: all shared craft applies unchanged —
+Read this together with SKILL.md and
+[audience.md](audience.md): all shared craft applies unchanged —
 two-layer background, intuition before details, diagram families,
 plain-words openers, the zero-shared-vocabulary rule, linked glossary,
-self-contained document, verified inline citations, staleness discipline.
-What changes is the reader's job: not *understand what happened* but
-*decide what should happen*.
+self-contained document, verified inline citations, staleness discipline,
+and the two audience dials with their strip/demote rules, word ceilings and
+endings. What changes is the reader's job: not *understand what happened*
+but *decide what should happen*.
 
 ## Three structural inversions
 
@@ -36,37 +38,27 @@ What changes is the reader's job: not *understand what happened* but
   each act points at the systems, records, and people the work would touch.
   **Internal only** — see the audience rule below.
 
-## Audience: internal draft vs circulated document
+## Audience
 
-A plan brief has two audiences and they want different documents. Decide
-which you are writing *before* drafting, and say so at the top, because two
-sections are conditional on the answer.
+Set by the dials in [audience.md](audience.md) — the same two that govern the
+backward tense. A plan brief defaults to the **plan brief** preset (`forward ·
+adjacent`, ≤1500 words plus the register); `access` is the live choice, and it
+is the one that gets a plan brief into trouble.
 
-**Internal draft** — for the author and whoever shares their knowledge base.
-Keeps everything, including the pointers and the capacity judgements. This is
-a working document.
+Two strips matter most here, and both were learned from a real circulation
+round rather than reasoned out:
 
-**Circulated document** — a brief, proposal, or handover going to
-collaborators, supervisors, or reviewers. Two things come out:
+1. **The "what this touches" pointers go.** Nothing exists yet, so they name
+   files, records and internal IDs in one person's knowledge base — dead links
+   that imply a substrate the reader has no access to, and they pull the eye to
+   plumbing instead of the argument.
+2. **A named person's capacity is never published as a claim about them.**
+   "X's workload is the binding constraint" is a judgement about a colleague,
+   written where they and their supervisor will both read it — and in a handover
+   it is not even actionable. State the *scheduling* constraint instead, and let
+   the humans allocate.
 
-1. **Cut the "what this touches" pointers.** They name files, records, and
-   internal IDs in one person's knowledge base. To everyone else they are
-   dead links that imply a shared substrate the reader has no access to, and
-   they push the reader's eye to plumbing instead of the argument. If an act
-   genuinely depends on an external artifact the reader can open, cite it
-   normally in the prose. (Same rule for the backward tense: "where it
-   lives" is internal.)
-2. **Never publish a named person's capacity as a claim about them.** "X's
-   workload is the binding constraint" is a judgement about a colleague,
-   written where they and their supervisor will both read it — and in a
-   handover it is not even actionable. State the *scheduling* constraint
-   instead ("this phase needs one person's undivided attention for ~3 weeks
-   and cannot be parallelised"), and let the humans allocate. Ownership rows
-   say what a person would *carry*, never how much they have left.
-
-The two are one document with a flag, not two documents — write the internal
-version, then strip. Deriving the circulated version from the internal one
-keeps them from drifting; maintaining two drafts guarantees they do.
+Write the internal version, then strip. One document with a flag, not two.
 
 ## Handovers
 
@@ -81,7 +73,9 @@ decider. The inversions above all hold, plus:
   are not.
 - **End in an executable checklist** with a pass condition per step, so
   "done" is checkable by the implementer rather than adjudicated by the
-  author.
+  author. It replaces the register as the gate
+  ([audience.md](audience.md) § *Endings*), and the handover is the one preset
+  with **no word ceiling**: for an implementer, completeness beats brevity.
 
 ## The review loop
 

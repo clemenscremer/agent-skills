@@ -191,3 +191,81 @@ the delivery environment resembled the authoring one. The audience rule already 
 this skill says decide who reads it before drafting; this says decide *where* they
 read it, and verify there.
 
+
+---
+
+## Addendum, 2026-08-31 — T6 fired (inside the skill), and audience became a dial
+
+Two things happened in one session. The trivial one first, because it is the
+better story: **the frontmatter had been unparseable since the forward-mode
+edit.** `Debrief also has a forward-looking mode: when a plan…` — an unquoted
+`: ` inside a plain scalar, which YAML reads as a nested mapping. GitHub
+refused to render it (`line 2 column 771`); this harness's own loader is
+lenient, so the skill kept working and nobody noticed for a month. Then, while
+adding the audience clause to that same description, the same mistake was made
+again within the hour (`in both tenses: 'write this up…'`).
+
+Generalisable, and not really about YAML: **a description is the skill's only
+selection mechanism and the one part no reader proofreads.** It needs a
+mechanical gate, not care. `yaml.safe_load(open(f).read().split('---')[1])`
+over every SKILL.md is a one-liner and belongs in whatever CI this repo grows.
+Worth pushing up into `writing-skills` as a rule rather than living here.
+
+### T6, as pre-registered
+
+The 2026-07-31 addendum committed to a condition: *the next both-tenses craft
+rule triggers the T6 extraction rather than another cross-reference.* Audience
+is that rule, so it fired — but **inside `debrief`**, not as a separate craft
+skill: [references/audience.md](references/audience.md), pointed at from both
+SKILL.md and plan.md, with the audience section deleted from plan.md rather
+than duplicated. This takes the de-duplication win while avoiding the risk the
+original T6 carried (cross-skill references that break when only one skill is
+installed). `explain-change` and `micro-world` still duplicate craft; when the
+third consumer needs the same rule, that is the signal for the real extraction.
+
+### What audience.md adds
+
+- **Two orthogonal dials, not a list of document types.** `access`
+  (internal/circulated) controls **stripping**; `altitude`
+  (specialist/adjacent/non-specialist) controls **demoting**. Rules attach to
+  dials, so an invented preset inherits correct behaviour. Five named presets
+  are just coordinates.
+- **Strip ≠ demote.** A dead pointer is deleted; a number the reader does not
+  need is collapsed into `<details>` and keeps its trace to the record. That
+  distinction is what lets one authored source serve every altitude.
+- **The layers invert with altitude** rather than accumulating. At
+  non-specialist the figure carries the argument, the prose supports it, one
+  number per act survives in the main flow, and the glossary moves *before* the
+  background — a reader who lacks the words cannot read the background that
+  teaches them the words.
+- **Hard word ceilings replace the reading-time target.** The old "~10 minutes"
+  was measured against a real project's artifacts and had failed exactly where
+  it mattered most: internal arc explainers 945–1254 main-flow words (fine), the
+  document written for the broadest audience **3343** — 4× over, at the altitude
+  with the least patience. (The first pass at this addendum quoted 5313, from a
+  counter that swept in glossary, captions and collapsed blocks. Defining the
+  ceiling and then measuring by a different rule is the obvious way to make a
+  ceiling meaningless: the count rule ships beside the numbers.) Ceilings: 2000 / 1200 / 800, handover exempt. Plus a cut
+  list, and the count as a ship gate beside the scripts-off check.
+- **The ending follows the reader's job.** The quiz gates *the owner's*
+  green-light of the next arc, so it has no function pointed at a supervisor or
+  a client and reads as patronising there. Circulated non-specialist ends in
+  takeaways + the ask + **what would change our mind**. The invariant: the
+  internal version always carries the quiz, and the circulated one is derived
+  by stripping it — authoring without one silently removes the speed regulator.
+
+### Effect on the open questions
+
+- **Trigger dilution is now doubly live**: one description spans two tenses
+  *and* names audience presets (1123 → 1294 chars). Still directly testable by
+  watching whether the skill fires when expected; no evidence of degradation
+  yet, and it fired correctly on the session that wrote this.
+- **T3 (rename to `brief`) is cheaper than it was.** With audience extracted,
+  SKILL.md is closer to being just the backward mode, which is what T3 needs it
+  to be. Lean unchanged: no rename until a reviewer actually responds against
+  decision IDs.
+- New question, from the same session that produced the ceilings: **is
+  "outward brief" really debrief's job, or a sibling?** It shares the source
+  document and the derivation mechanism, which argues it stays. But its
+  ending, its ceiling and its voice all differ, and its reader never sees the
+  quiz. Watch whether it accumulates rules of its own.

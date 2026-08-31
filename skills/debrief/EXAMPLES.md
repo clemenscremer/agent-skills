@@ -48,3 +48,41 @@ plain-words landing strip. Republishing also caught three status claims that
 had gone stale between versions — including "nothing has been filed", written
 before the filing it was describing. Hence: verify status claims and re-read
 the whole file on every regeneration.
+
+## The audience set — one project, three altitudes
+
+The rules in [references/audience.md](references/audience.md) were written and
+then immediately exercised on the same project the first two examples come from:
+the whole temporal-interpolation arc (six-hourly reanalysis → hourly, feeding a
+synthetic storm catalogue for surge design) rendered at all three altitudes from
+one source. Measured outcome, main-flow prose:
+
+| preset | words | ceiling | what it kept |
+|---|---|---|---|
+| arc explainer · specialist | 1791 | 2000 | every load-bearing number, MathML for the CRPS and AR(1) definitions, per-act record pointers, 5-question quiz |
+| team read-out · adjacent | 1195 | 1200 | plain-words opener and one figure per act, mandatory glossary, pointers kept, 3-question quiz |
+| outward brief · non-specialist | 694 | 800 | glossary before the background, figures carrying the argument, one number per act, method demoted, takeaways + the ask + what would change our mind |
+
+The pre-existing document for the broadest audience measured **3343** words —
+longer than every internal artifact in the same repo, which is the pattern the
+ceilings exist to break. Deriving the short one from the full one took the same
+afternoon as writing the rules.
+
+**What the exercise taught, beyond confirming the ceilings:**
+
+- **The `<details>` demotion is what makes the ceiling survivable.** Without it,
+  cutting to 694 words means deleting provenance, and the honest negatives are
+  the first thing that feels expendable. With it, the outward brief still carries
+  the spatially-white-noise caveat and the storm that failed to support its own
+  proposer's hypothesis — collapsed, not gone.
+- **Two figure defects that no amount of re-reading would have caught**: a
+  five-region bar chart shipped with its value-to-pixel scale inverted (bars
+  contradicting the table beside them), and three axis labels rendering clipped
+  at the `viewBox` edge. Both are now verification rules in SKILL.md. The
+  general lesson is the older one restated: *the figure is a claim, and claims
+  get checked against the record — including the record of what the browser
+  actually draws.*
+- **Writing the briefs found a defect in the underlying records.** Two same-day
+  experiment pages give different cell counts for the same region at the
+  deployment grid. A packet that traces every number to a source will surface
+  disagreements between sources, which is a second reason to write one.
