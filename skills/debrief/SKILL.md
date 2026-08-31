@@ -1,6 +1,6 @@
 ---
 name: debrief
-description: Produce understanding artifacts at the close of a substantive work arc — a background-first explainer packet ending in a check-your-understanding quiz, and (when a result is easier to inhabit than to read) an interactive micro-world built on real project data. Use this whenever a multi-session or multi-PR push wraps up, before asking the human to green-light a next phase, or when they say things like 'where do we stand', 'catch me up', 'summarize what we did', 'explain what you built', 'I've lost the plot', or ask how to keep up with agent-written work — even if they don't ask for a document explicitly. For a single diff, commit, or PR, use the explain-change skill instead — debrief covers arcs, not changes. Debrief also has a forward-looking mode: when a plan or proposal needs review or alignment before work starts — 'plan brief', 'decision register', 'which decisions are still open', 'get this plan ready for review' — the same packet is written in future tense and ends in a decision register instead of a quiz (references/plan.md). The goal is understanding to participate, not just to verify.
+description: Produce understanding artifacts at the close of a substantive work arc — a background-first explainer packet ending in a check-your-understanding quiz, and (when a result is easier to inhabit than to read) an interactive micro-world built on real project data. Use this whenever a multi-session or multi-PR push wraps up, before asking the human to green-light a next phase, or when they say things like 'where do we stand', 'catch me up', 'summarize what we did', 'explain what you built', 'I've lost the plot', or ask how to keep up with agent-written work — even without an explicit ask for a document. For a single diff, commit, or PR, use the explain-change skill instead — debrief covers arcs, not changes. It also has a forward-looking mode for a plan or proposal needing review before work starts — 'plan brief', 'decision register', 'which decisions are still open', 'get this plan ready for review' — same packet, future tense, ending in a decision register (references/plan.md). Audience is a dial in both tenses — 'write this up for the team', 'something I can send to my supervisor', 'a plain-language version', 'for a wider audience' pick a preset of the same packet (references/audience.md), not a different practice. The goal is understanding to participate, not just to verify.
 license: MIT
 ---
 
@@ -30,13 +30,28 @@ bottleneck. Siblings: `explain-change` (single change), `micro-world`
   before work starts ("plan brief", "which decisions are still open",
   "prepare this for review", "set up a decision register").
 
-## Tense dispatch
+## Dispatch — tense, then audience
 
-Everything below is written in the backward tense — an arc that happened.
-For the forward-looking trigger, read
+Two decisions before drafting, in this order.
+
+**Tense.** Everything below is written in the backward tense — an arc that
+happened. For the forward-looking trigger, read
 [references/plan.md](references/plan.md) and follow it: the shared craft in
 this file applies unchanged, but three sections invert and the packet ends
 in a decision register instead of a quiz.
+
+**Audience.** Read [references/audience.md](references/audience.md) and
+declare a preset in one line at the top of the packet before writing a word
+of it. Two orthogonal dials — **access** (`internal` / `circulated`, which
+decides what gets *stripped*) and **altitude** (`specialist` / `adjacent` /
+`non-specialist`, which decides what gets *demoted*) — set the word ceiling,
+the figure load, the glossary's position and the ending. They bind in both
+tenses. Retrofitting them after drafting means rewriting, because they
+change what belongs in the main flow rather than how it is phrased.
+
+Both dispatches leave one authored source: derive the narrower document from
+the fuller one by stripping and demoting. Two drafts of the same content
+drift, always.
 
 ## Artifact 1 — the explainer packet (always)
 
@@ -83,11 +98,10 @@ lose nothing else. Fixed structure, in this order:
    (what was tried → what was found → what that forced next), not
    chronological minutiae or files-in-alphabetical-order. Include the load-
    bearing numbers inline, and a "where it lives" pointer (paths, records,
-   PRs) after each act — **in internal packets only.** A packet circulated
-   outside the knowledge base it was written in drops those pointers: they
+   PRs) after each act — **when `access = internal` only.** A packet circulated
+   outside the knowledge base it was written in strips those pointers: they
    are dead links for that reader and imply a shared substrate they cannot
-   open. Decide the audience before drafting; see
-   [references/plan.md](references/plan.md) § *Audience*, which applies in
+   open. See [references/audience.md](references/audience.md), which binds in
    both tenses.
 4. **Honest negatives get equal billing.** Failed acceptance criteria,
    reversed assumptions, and bugs found are often the most valuable content.
@@ -100,19 +114,35 @@ of what the thing *is* — the expansion alone rarely helps. Introduce every
 symbol before its first use: what it measures, its units, a typical value.
 General domain terms can be taught in the skippable deep background, but
 project-coined names and shorthand must be defined in the main flow — even a
-domain expert cannot know those. If more than a handful of terms recur,
-collect them in a small glossary callout right after the background — and make
-it **bidirectional**: anchor-link every in-text occurrence back to its entry so
-the reader never scrolls hunting for a definition. Check that the links resolve
-in both directions; orphaned anchors are worse than no anchors.
+domain expert cannot know those. Collect recurring terms in a glossary
+callout — **bidirectional**: anchor-link every in-text occurrence back to its
+entry so the reader never scrolls hunting for a definition, and check that the
+links resolve both ways, since orphaned anchors are worse than no anchors.
+Whether the glossary is optional and where it sits is set by altitude
+([references/audience.md](references/audience.md)): at `non-specialist` it is
+mandatory and comes *before* the background, because a reader who lacks the
+words cannot read the background that teaches them the words.
 
-Budget: ~10 minutes reading time. If the arc needs more, split into acts, not
-into a longer document.
+**Budget: a hard word ceiling set by the preset, not a reading-time target**
+(2000 / 1200 / 800 for specialist / adjacent / non-specialist; see
+[references/audience.md](references/audience.md) for the count rule, the cut
+list, and the one-liner that counts it). A target you can overshoot fourfold is not
+a constraint — measured across one real project's eight artifacts, the internal
+arc explainers landed at 945–1254 main-flow words while the document written for
+the broadest audience reached 3343. Over ceiling → split into acts or cut, never a longer document.
+Terseness is bought from packaging: never from omitted negatives, missing
+provenance labels, or an unstated assumption.
 
 ## Artifact 2 — the quiz (always, inside the packet)
 
-~5 questions of medium difficulty — hard enough that the reader must have
-understood the substance of the arc, but no gotchas or trivia. Rules:
+~5 questions of medium difficulty (3 at `adjacent` altitude) — hard enough
+that the reader must have understood the substance of the arc, but no gotchas
+or trivia. A **circulated non-specialist** packet ends in takeaways + the ask
++ *what would change our mind* instead; the invariant is that the internal
+version still carries the quiz, and the circulated one is derived by stripping
+it — see [references/audience.md](references/audience.md) § *Endings*. A
+circulated brief written with no internal quiz behind it has silently removed
+the speed regulator. Rules:
 
 - In HTML packets, make it **interactive multiple-choice**: clicking an
   option reveals correct/incorrect plus a one-line explanation. In markdown
@@ -182,7 +212,19 @@ comparison worlds). The compact core rules:
   disabled.** Headless browsers make this two lines
   (`browser.new_context(java_script_enabled=False)`), and it is the only way to see
   what a reader in a locked-down viewer sees. Both passes must show every figure and
-  make every answer reachable; the counts should match. Also check the artifact's
+  make every answer reachable; the counts should match. **Count the words in
+  the same breath** — the ceiling is a ship gate, not an aspiration.
+- **Generate quantitative figures from the numbers, never by placing
+  coordinates by hand.** Hand-placed bars and curves encode an arithmetic
+  error that no proofreading catches, because the figure looks plausible: in
+  one session a five-region comparison shipped with the value-to-pixel scale
+  inverted, so the bars contradicted the table beside them. Emit the geometry
+  from the data in a few lines of script and print the mapping you used.
+- **Assert that no text escapes its own `viewBox`.** SVG does not clip by
+  default in every context and does not warn: a label reading "20.5 cm"
+  silently renders as "20.5 cr" at the right edge. One line in the headless
+  pass — compare each `svg text` rect against its owner's — caught three such
+  labels in three files. Check horizontal page overflow the same way. Also check the artifact's
   claims against what it actually displays — a computed panel will happily
   contradict the sentence you wrote about it, and it may teach *you* that your
   annotation was wrong. Fix the annotation, and say so.
